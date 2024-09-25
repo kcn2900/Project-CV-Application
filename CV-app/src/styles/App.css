@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Form CSS */
+
+.gray-out {
+    background-color: rgb(128, 128, 128);
+    opacity: 0.5;
+}
+
+.form-hidden {
+    display: none;
+}
+
+.form-show {
+    display: block;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 7vh;
+    flex-wrap: wrap;
+    padding: 0 10vw;
+
+    align-items: center;
+}
+
+.form-button {
+    width: 5vw;
+}
+
+form>div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5vh;
+}
+
+form>div>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.description-list, .achievements-list {
+    border: 1px solid black;
+    padding: 1vh;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    gap: 0.5vh;
+}
+
+.description-list>div,
+.achievements-list>div {
+    display: flex;
+    gap: 1vh;
+}
+
+.description-list input {
+    width: 20vw;
+}
+
+.description-list>button, .achievements-list>button {
+    width: 10vh;
+}
+
+/* Resume CSS Below */
+
+.edit-button {
+    position: absolute;
+}
+
+/* Resume Header CSS */
+
+.resume-header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 0 4vh 0;
+}
+
+.header-top,
+.header-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vh;
+}
+
+.header-top {
+    font-size: 1.5rem;
+    gap: 1vw;
+}
+
+.header-bottom>span {
+    font-size: 1.5rem;
+}
+
+/* Resume Body CSS */
+
+.resume-body {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.resume-body hr {
+    margin-bottom: 2vh;
+}
+
+.body-education, .body-education>div,
+.body-experience, .body-experience>div {
+    padding: 0 1vw;
+}
+
+.education-top, .experience-top {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+
+.education-bottom, .experience-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.education-bottom>ul, .experience-bottom>ul {
+    margin-left: 3vw;
+}
